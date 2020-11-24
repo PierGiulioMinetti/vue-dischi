@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* utility */
@@ -10,9 +11,24 @@
     display: flex;
 }
 
+div{
+    text-align: center;
+}
+
+.header-logo{
+    text-align: left;
+    background-color: #2b3a47;
+}
 
 /* ********************* */
 
+/* GENERAL CONTAINER */
+.container{
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* HEADER */
 .header-logo{
     height: 50px;
 }
@@ -20,31 +36,50 @@
 .header-logo>img{
     max-height: 100%;
 }
-.container{
-    flex-direction: column;
-    height: 100vh;
+
+/* MAIN CONTENT */
+.main-content{
+    background-color: #192d3c;
+    flex-grow: 1;
 }
 
-.main-content{
-    background-color: rgb(61, 61, 107);
-    flex-grow: 1;
+.singer,
+.year{
+    color:#808080;
+    margin: 10px;
+}
+
+.white,
+.genre{
+    color: white;
 }
 
 .select-container{
     text-align: center;
+    margin-top: 20px;
 }
 
 .cover-album>img{
-    max-width: 150px;
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
 }
 
 li{
-    margin: 20px;
+    height: 300px;
+    margin: 20px 10px;
     list-style: none;
     flex-basis: 150px;
+    background-color: #2b3a47;
 }
 
 ul{
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.title-album{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
 }

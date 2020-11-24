@@ -8,13 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- GENERAL CONTAINER -->
     <div class="container d-flex" id="app">
+        <!-- HEADER -->
         <div class="header-logo">
             <img src="./logo.png" alt="">
         </div>
+        <!-- MAIN CONTENT -->
         <div class="main-content">
+            <!-- SELECT  -->
             <div class="select-container">
-                <span>
+                <span class="white">
                     Filter by gender
                 </span>
                 <select 
@@ -27,7 +32,7 @@
                     <option value="jazz">Jazz</option>
                 </select>
             </div>
-
+            <!-- ALBUM CONTAINER -->
             <div class="single-album-container ">
                 <ul class="d-flex">
                     <li v-for="album in album">

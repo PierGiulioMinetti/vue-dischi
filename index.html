@@ -17,7 +17,9 @@
                 <span>
                     Filter by gender
                 </span>
-                <select name="" id="">
+                <select 
+                v-model="actualGenre"
+                @change="refresh" name="" id="">
                     <option value="all">All</option>
                     <option value="pop">Pop</option>
                     <option value="rock">Rock</option>
